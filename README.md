@@ -1,7 +1,7 @@
-# AmazonLinux_wsl_setup
+# Amazon Linux WSL Setup
 
 ## Intro
-An automated script to create Amazon Linux to be used in Windows WSL subsystem with predefined packages in Dockerfile. 
+An automated script to create Amazon Linux 2023 to be used in Windows WSL subsystem with predefined packages in Dockerfile. 
 
 
 ## Preparation
