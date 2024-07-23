@@ -6,18 +6,6 @@ An automated script to create Amazon Linux 2023 to be used in Windows WSL subsys
 
 ## Preparation
 
-### Setup Powershell
-To permit executing powershell script , run following command using Powershell as admin
-
-```bash
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-
-or
-
- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-
-```
-
 ### Install and setup WSL 2 on Windows
 
 **Note:This is one-time process if WSL is not activated**
@@ -35,6 +23,22 @@ After reboot open Powershell and type
 wsl
 ```
 This will start Ubuntu by default. Exit the bash using **exit** command
+
+
+
+### Setup Powershell
+To permit executing powershell script , run following command using Powershell as admin
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+**OR**
+
+```bash
+ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+
 
 
 ### Setup Amazon Linux as WSL instance for Developement
