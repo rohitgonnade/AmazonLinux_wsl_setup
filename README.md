@@ -24,6 +24,7 @@ wsl
 ```
 This will start Ubuntu by default. Exit the bash using **exit** command
 
+The powershell script assumes that the ubuntu distribution is named as **Ubuntu**. If it is different say Ubuntu-24.04 , please make change in .\PowershellScript\createAmazonLinux.ps1
 
 
 ### Setup Powershell
