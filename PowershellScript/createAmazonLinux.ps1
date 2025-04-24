@@ -8,16 +8,16 @@ if (Test-Path $path)
     Remove-Item -Path $path -Recurse -Force
 }
 
-$tarFile = Join-Path $scriptDir "../al20231.tar"
+$tarFile = Join-Path $scriptDir "../al2023.tar"
 if (Test-Path $tarFile)
 {
     Remove-Item -Path $tarFile -Force
 }
 
 # create amazon linx tar file
-wsl -d Ubuntu -e bash Linux_scripts/Ubuntu/createAmazonLinux.sh
+wsl -d Ubuntu-24.04 -e bash Linux_scripts/Ubuntu/createAmazonLinux.sh
 
-wsl --terminate Ubuntu
+wsl --terminate Ubuntu-24.04
 # wsl --unregister Ubuntu
 
 #import tar as distribution in WSL
